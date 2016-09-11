@@ -1,0 +1,23 @@
+<footer class="site-footer">
+	<div class="offsite-links">
+		<!-- TODO: add social networks based on author feature -->
+		<a href="https://twitter.com/"><i class="icon-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span></a>
+		<a href="https://github.com/"><i class="icon-github" aria-hidden="true"></i><span class="screen-reader-text">GitHub</span></a>
+		<a href="https://plus.google.com/"><i class="icon-google-plus" aria-hidden="true"></i><span class="screen-reader-text">Google+</span></a>
+		<a href="https://instagram.com/"><i class="icon-instagram" aria-hidden="true"></i><span class="screen-reader-text">Instagram</span></a>
+		{{ if .RSSLink }}
+		<a class="rss-link" href="{{ .RSSLink }}"><i class="icon-rss"></i></a>
+		{{ end }}
+	</div>
+
+	<div class="site-info">
+		&copy; {{ .Now.Format "2006" }}
+        {{ .Site.Params.copyright | markdownify | emojify }}<br />
+
+        {{ if not .Site.Params.hide_credit }}
+        {{ i18n "credit" | markdownify }}
+        {{ end }}
+	</div>
+
+	<a href="#page" class="back-to-top" title="Back to Top">&#8593;</a>
+</footer>

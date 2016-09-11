@@ -1,0 +1,18 @@
+name = "Scriptor"
+license = "MIT"
+licenselink = "https://github.com/digitalcraftsman/hugo-scriptor-theme/blob/master/LICENSE.md"
+description = "Minimal Hugo blogging theme for writers."
+homepage = "http://siteforthistheme.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.17
+
+[author]
+  name = "Digitalcraftsman"
+  homepage = "https://github.com/digitalcraftsman"
+
+# If porting an existing theme
+[original]
+  name = "Just Good Themes"
+  homepage = "http://www.justgoodthemes.com/"
+  repo = "https://github.com/JustGoodThemes/Scriptor"

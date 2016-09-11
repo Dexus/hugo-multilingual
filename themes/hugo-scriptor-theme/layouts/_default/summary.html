@@ -1,0 +1,11 @@
+<article class="post" role="article">
+	<div class="post-content">
+        {{ partial "post/header" . }}
+		<p>{{ .Summary | markdownify | emojify }}</p>
+		<p class="read-more">
+            <a class="read-more-link" href="{{ .Permalink }}" title="{{ .Title }}">
+                {{ i18n "continue-reading" }} &rarr;
+            </a>
+        </p>
+	</div>
+</article>

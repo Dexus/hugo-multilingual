@@ -1,0 +1,53 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "Scriptor"
+# Define the number of posts per page
+paginate = 1
+# Enter your Disqus shortname to enable comments
+disqusShortname = "spf13"
+# Enter your tracking code to integrate Google Analytics
+googleAnalytics = ""
+DefaultContentLanguage = "en"
+theme = "hugo-scriptor-theme"
+
+
+#
+#   General settings
+#
+[params]
+    # Logo with relative path to static folder
+    logo = ""
+    # Hide the main menu
+    hide_menu = false
+    # Hide the credit in the footer
+    hide_credit = false
+
+    # Link custom assets by adding their path relative to the static folder
+    custom_css = []
+    custom_js  = []
+
+
+#
+#   Language configuration
+#
+[languages.en]
+    weight = 0
+    languageCode = "en-us"
+    description = "Scriptor is a minimal Hugo blogging theme for writers."
+    message = "John Doe is a designer, speaker, and author. He is the Creative Director of Awesome Design studio, co-founder of magazine Camera and a coffee junkie."
+    copyright = "All rights reserved."
+
+[languages.de]
+    weight = 10
+    languageCode = "de-de"
+    description = "Scriptor ist ein minimalistisches Hugo-Theme für Blogger."
+    message = "John Doe ist Designer, Referent und Autor. Er ist der Creative Director bei Awesome Design Studio, Mitbegründer des Magazines Camera und ein Kaffee-Junkie."
+    copyright = "Alle Rechte vorbehalten."
+
+
+#
+#   Menus
+#
+[[menu.main]]
+    url    = "/"
+    name   = "Home"
+    weight = 0

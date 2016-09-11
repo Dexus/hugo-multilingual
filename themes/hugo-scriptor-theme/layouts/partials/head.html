@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
+		<meta name="description" content="{{ .Description }}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {{ with .Keywords }}
+        <meta name="keywords" content="{{ . }}">
+        {{ end }}
+
+		<!-- TODO: add author meta tag -->
+		{{ with .Description }}
+        <meta name="description" content="{{ . }}">
+        {{ end }}
+
+        {{ if .RSSlink }}
+        <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+        <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+        {{ end }}
+        <link rel="canonical" href="{{ .Permalink }}"/>
+        <link rel="icon" href="{{ "favicon.ico" | absURL }}">
+
+        {{ "<!-- Stylesheets -->" | safeHTML }}
+		<link rel="stylesheet" type="text/css" href="{{ "css/style.css" | absURL }}" />
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic%7CLato:400,400italic,700,700italic" />
+        {{ range .Site.Params.custom_css }}
+        <link rel="stylesheet" type="text/css" href="{{ . | absURL }}" />
+        {{ end }}
+
+		{{ template "_internal/opengraph.html" . }}
+		{{ template "_internal/google_news.html" . }}
+		{{ template "_internal/schema.html" . }}
+		{{ template "_internal/twitter_cards.html" . }}
+    </head>
+	<body class="post-template">

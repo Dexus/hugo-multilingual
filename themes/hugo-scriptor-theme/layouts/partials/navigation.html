@@ -1,0 +1,11 @@
+<nav class="main-navigation">
+	<h2 class="screen-reader-text">{{ i18n "main-navigation" }}</h2>
+	<ul class="menu">
+        {{ $currentNode := . }}
+		{{ range .Site.Menus.main }}
+		<li class="menu-item {{ if $currentNode.IsMenuCurrent "main" . }} current-menu-item{{ end }}" role="presentation">
+            <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+        </li>
+		{{ end }}
+	</ul>
+</nav>

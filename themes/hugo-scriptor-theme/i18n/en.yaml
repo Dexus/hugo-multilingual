@@ -1,0 +1,84 @@
+#
+#   General
+#
+- id: main-navigation
+  translation: Main navigation
+
+#
+#   Nodes (category list etc.)
+#
+- id: filter-by
+  translation: Filter by
+
+- id: all-posts-in
+  translation: All posts in
+
+
+#
+#   Content related
+#
+- id: featured
+  translation: Featured
+
+# - id: translations
+#   translation: "Translations:"
+
+- id: continue-reading
+  translation: Continue reading
+
+- id: share-this-post
+  translation: "Share this post:"
+
+- id: comments
+  translation: Comments
+
+
+#
+#   Author
+#
+- id: author-picture
+  translation: John Doe's Picture
+
+- id: author-about
+  translation: About
+
+- id: posted-by
+  translation: Posted by John Doe
+
+- id: posted-in
+  translation: in # Posted by [author] in ...
+
+#
+#   Pagination
+#
+- id: next-post
+  translation: Next post
+
+- id: previous-post
+  translation: Previous post
+
+- id: newer-post
+  translation: Newer Posts
+
+- id: older-post
+  translation: Older Posts
+
+- id: page-indicator
+  translation: Page {{ .PageNumber }} of {{ .TotalPages }}
+
+
+#
+#   404 page
+#
+- id: page-not-found
+  translation: Oops, page not found
+
+- id: page-not-found-description
+  translation: The content you're looking for doesn't seem to exist - [Take me home]({{ . }})</a>.
+
+
+#
+#   Footer
+#
+- id: credit
+  translation: Powered by <a target="_blank" href="http://www.gohugo.io">Hugo</a>. Scriptor theme by <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>.

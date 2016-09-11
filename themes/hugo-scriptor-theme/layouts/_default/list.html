@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main class="main-content" role="main">
+    <section>
+        <header class="page-header">
+			<h1 class="page-title">{{ i18n "all-posts-in" }} <span class="highlight">{{ .Title }}</span></h1>
+		</header>
+
+        {{ range .Data.Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+
+        {{ partial "pagination-links" . }}
+    </section>
+</main>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ if .PrevInSection | or .NextInSection }}
+<nav class="post-nav">
+    {{ if .PrevInSection }}
+    <div class="next">
+        <a href="{{ .PrevInSection.Permalink }}">← {{ i18n "next-post" }}</a>
+    </div>
+    {{ end }}
+
+    {{ if .NextInSection }}
+    <div class="prev">
+        <a href="{{ .NextInSection.Permalink }}">{{ i18n "previous-post" }} →</a>
+    </div>
+    {{ end }}
+</nav>
+{{ end }}

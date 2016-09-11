@@ -1,0 +1,17 @@
+{{ partial "head" . }}
+
+<div id="page" class="inner">
+    {{ partial "header" . }}
+
+    {{ if isset .Site.Params "message" | and .IsHome }}
+    <div class="site-description">
+    	<p>{{ .Site.Params.message | markdownify | emojify }}</p>
+    </div>
+    {{ end }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "footer.html" . }}
+</div>
+
+{{ partial "footer-js" . }}

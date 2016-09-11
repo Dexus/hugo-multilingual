@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="main-content" role="main">
+	<article class="post" role="article">
+		{{ partial "post/header" . }}
+		<div class="post-content">
+			{{ .Content}}
+        </div>
+
+        {{ partial "post/share" . }}
+        {{ partial "post/author" . }}
+	</article>
+
+    {{ partial "post/prev-next" . }}
+    {{ partial "post/comments" . }}
+</main>
+{{ end }}

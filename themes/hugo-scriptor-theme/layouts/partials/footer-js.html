@@ -1,0 +1,9 @@
+    {{ template "_internal/google_analytics_async.html" . }}
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="{{ "js/jquery.fitvids.js" | absURL }}"></script>
+    <script type="text/javascript" src="{{ "js/custom.js" | absURL }}"></script>
+    {{ range .Site.Params.custom_js }}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+    {{ end }}
+    </body>
+</html>

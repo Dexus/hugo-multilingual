@@ -1,0 +1,75 @@
+#
+#   General
+#
+- id: main-navigation
+  translation: Hauptmenü
+
+#
+#   Nodes (category list etc.)
+#
+- id: filter-by
+  translation: Suchen in
+
+- id: all-posts-in
+  translation: Alle Artikel in
+
+
+#
+#   Content related
+#
+- id: featured
+  translation: Hervorgehoben
+
+# - id: translations
+#   translation: "Übersetzungen:"
+
+- id: continue-reading
+  translation: Weiterlesen
+
+- id: share-this-post
+  translation: "Teile diesen Artikel"
+
+- id: comments
+  translation: Kommentare
+
+
+
+#
+#   Author
+#
+- id: author-picture
+  translation: John Doe's Bild
+
+- id: author-about
+  translation: Über
+
+- id: posted-by
+  translation: Veröffentlicht von John Doe
+
+- id: posted-in
+  translation: in # Posted by [author] in ...
+
+#
+#   Pagination
+#
+- id: next-post
+  translation: Nächster Artikel
+
+- id: previous-post
+  translation: Vorheriger Artikel
+
+- id: newer-post
+  translation: Neuere Artikel
+
+- id: older-post
+  translation: Ältere Artikel
+
+- id: page-indicator
+  translation: Seite {{ .PageNumber }} von {{ .TotalPages }}
+
+
+#
+#   Footer
+#
+- id: credit
+  translation: Erstellt mit <a target="_blank" href="http://www.gohugo.io">Hugo</a>. Scriptor-Theme von <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>.

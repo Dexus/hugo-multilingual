@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="main-content" role="main">
+	<article class="post" role="article">
+		<div class="post-content">
+			{{ partial "post/header" . }}
+
+			{{ .Content}}
+        </div>
+	</article>
+</main>
+{{ end }}

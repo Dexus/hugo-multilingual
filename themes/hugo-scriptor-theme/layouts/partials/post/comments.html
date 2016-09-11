@@ -1,0 +1,8 @@
+{{ if .Site.DisqusShortname | and (not .Params.hide_comments) }}
+<div class="comments-area">
+	<h3 id="comments-title">{{ i18n "comments" }}</h3>
+	<div class="column-large">
+		{{ template "_internal/disqus.html" . }}
+	</div>
+</div>
+{{ end }}

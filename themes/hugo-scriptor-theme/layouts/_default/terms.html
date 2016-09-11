@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="main-content" role="main">
+    <section>
+        <header class="page-header">
+			<h1 class="page-title">{{ i18n "filter-by" }} <span class="highlight">{{ .Data.Singular | humanize }}:</span></h1>
+		</header>
+
+        {{ $data := .Data }}
+        {{ range $key, $value := .Data.Terms.ByCount }}
+            <h3>
+                <a class="category-list-link" href="{{ $value.Name | urlize }}">{{ $value.Name | humanize }} ({{ $value.Count }})</a>
+            </h3>
+        {{ end }}
+    </section>
+</main>
+{{ end }}
