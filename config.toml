@@ -36,6 +36,12 @@ theme = "hugo-scriptor-theme"
     message = "John Doe is a designer, speaker, and author. He is the Creative Director of Awesome Design studio, co-founder of magazine Camera and a coffee junkie."
     copyright = "All rights reserved."
 
+    [[languages.en.menu.main]]
+        url    = "/"
+        name   = "Home"
+        weight = 0
+
+
 [languages.de]
     weight = 10
     languageCode = "de-de"
@@ -44,10 +50,7 @@ theme = "hugo-scriptor-theme"
     copyright = "Alle Rechte vorbehalten."
 
 
-#
-#   Menus
-#
-[[menu.main]]
-    url    = "/"
-    name   = "Home"
-    weight = 0
+    [[languages.de.menu.main]]
+        url    = "/"
+        name   = "Startseite"
+        weight = 0
