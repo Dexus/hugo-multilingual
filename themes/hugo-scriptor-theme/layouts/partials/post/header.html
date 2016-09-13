@@ -30,11 +30,12 @@
         {{ if .IsTranslated }}
 
             <!-- replace "Translations" with "{{ i18n "translations" }}" -->
-            &middot; Translations:
+            &middot; {{ i18n "translations" }}
 
 
             {{ range .Translations }}
-                <a href="{{ .Permalink }}">{{ .Lang }}</a>
+                {{ $curLang := index (where $.Site.Languages "Lang" .Lang) 0 }}
+                <a href="{{ .Permalink }}">{{ $curLang.LanguageName }}</a>
             {{ end }}
         {{ end }}
     </div>
