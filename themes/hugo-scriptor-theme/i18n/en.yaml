@@ -20,8 +20,8 @@
 - id: featured
   translation: Featured
 
-# - id: translations
-#   translation: "Translations:"
+- id: translations
+  translation: "Translations:"
 
 - id: continue-reading
   translation: Continue reading

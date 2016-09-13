@@ -20,8 +20,8 @@
 - id: featured
   translation: Hervorgehoben
 
-# - id: translations
-#   translation: "Übersetzungen:"
+- id: translations
+  translation: "Übersetzungen:"
 
 - id: continue-reading
   translation: Weiterlesen
