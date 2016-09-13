@@ -31,6 +31,7 @@ theme = "hugo-scriptor-theme"
 #
 [languages.en]
     weight = 0
+    languageName = "English"
     languageCode = "en-us"
     description = "Scriptor is a minimal Hugo blogging theme for writers."
     message = "John Doe is a designer, speaker, and author. He is the Creative Director of Awesome Design studio, co-founder of magazine Camera and a coffee junkie."
@@ -44,6 +45,7 @@ theme = "hugo-scriptor-theme"
 
 [languages.de]
     weight = 10
+    languageName = "Deutsch"
     languageCode = "de-de"
     description = "Scriptor ist ein minimalistisches Hugo-Theme für Blogger."
     message = "John Doe ist Designer, Referent und Autor. Er ist der Creative Director bei Awesome Design Studio, Mitbegründer des Magazines Camera und ein Kaffee-Junkie."
