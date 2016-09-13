@@ -4,7 +4,7 @@
         {{ $currentNode := . }}
 		{{ range .Site.Menus.main }}
 		<li class="menu-item {{ if $currentNode.IsMenuCurrent "main" . }} current-menu-item{{ end }}" role="presentation">
-            <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
         </li>
 		{{ end }}
 	</ul>
