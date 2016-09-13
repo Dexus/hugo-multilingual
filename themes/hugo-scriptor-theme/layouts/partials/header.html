@@ -1,9 +1,9 @@
 {{ if not .Site.Params.hide_menu }}
 <header class="site-header" role="banner">
     {{ with .Site.Params.logo }}
-    <h1 class="site-title"><a href="{{ $.Site.BaseURL }}"><img src="{{ . | absURL }}" /></a></h1>
+    <h1 class="site-title"><a href="{{ string $.Site.BaseURL | absLangURL }}"><img src="{{ . | absURL }}" /></a></h1>
     {{ else }}
-    <h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <h1 class="site-title"><a href="{{ string .Site.BaseURL | absLangURL }}">{{ .Site.Title }}</a></h1>
     {{ end }}
 
     {{ partial "navigation" . }}
