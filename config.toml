@@ -1,5 +1,5 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
-title = "Scriptor"
+title = "Scriptor [Demo]"
 # Define the number of posts per page
 paginate = 1
 # Enter your Disqus shortname to enable comments
@@ -50,6 +50,7 @@ theme = "hugo-scriptor-theme"
     description = "Scriptor ist ein minimalistisches Hugo-Theme für Blogger."
     message = "John Doe ist Designer, Referent und Autor. Er ist der Creative Director bei Awesome Design Studio, Mitbegründer des Magazines Camera und ein Kaffee-Junkie."
     copyright = "Alle Rechte vorbehalten."
+    paginatePath = "seite"
 
 
     [[languages.de.menu.main]]
