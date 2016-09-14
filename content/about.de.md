@@ -11,6 +11,7 @@ hide_comments = false
 type = "page"
 [menu.main]
     weight = 10
+url = "/über-mich"
 +++
 
 John Doe ist Software-Entwickler bei Startup Inc.
