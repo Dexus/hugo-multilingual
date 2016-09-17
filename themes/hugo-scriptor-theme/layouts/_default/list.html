@@ -5,7 +5,7 @@
 			<h1 class="page-title">{{ i18n "all-posts-in" }} <span class="highlight">{{ .Title }}</span></h1>
 		</header>
 
-        {{ range .Data.Pages }}
+        {{ range .Paginator.Pages }}
             {{ .Render "summary" }}
         {{ end }}
 
