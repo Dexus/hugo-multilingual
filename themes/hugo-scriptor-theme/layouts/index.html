@@ -1,5 +1,9 @@
 {{ define "main" }}
 <main class="main-content" role="main">
+
+    <h1>Authors: {{ .Site.Authors }}</h1>
+
+
     <!-- TODO: Pagination doesn't work for German translation if hidden pages are filtered out -->
     {{ $paginator := .Paginate .Data.Pages }}
 

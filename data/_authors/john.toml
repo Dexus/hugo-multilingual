@@ -1,0 +1,18 @@
+givenName      = "John"
+familyName     = "Doe"
+displayName    = "John Doe"
+thumbnail      = ""
+image          = ""
+shortBio       = "John is creative director at Awesome Design Studio, blogger, travler and coffee aficionado."
+bio            = "John is creative director at Awesome Design Studio, blogger, travler and coffee aficionado. You can find him as speaker at web developement/design conferences around the world."
+email          = "john@email.com"
+weight         = 0
+
+[social]
+    facebook   = "john.doe"
+    twitter    = "jdoe"
+    googleplus = "jdoe"
+    website    = "www.example.com"
+
+[params]
+	location = "London, UK"
