@@ -1,6 +1,6 @@
 +++
-categories = []
-date = "2016-09-09T15:53:31+02:00"
+categories = ["Getting started"]
+date = "2016-10-09T15:53:31+02:00"
 keywords = []
 tags = []
 title = "Foo"

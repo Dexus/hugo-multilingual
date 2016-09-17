@@ -12,7 +12,7 @@
     <h2 class="post-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h2>
     <div class="post-meta">
         <!-- TODO: add author feature -->
-        <!-- TODO: link categories -->
+        <!-- TODO: categories as taxonomy name is hardcoded. Try to find a way to insert a translation, e.g. kategorien -->
         {{ i18n "posted-by" }}
 
         {{ if isset .Params "categories" }}
@@ -21,18 +21,14 @@
                 {{ i18n "posted-in" }}
 
                 {{ range $k, $v := .Params.categories }}
-                <a class="article-category-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize | lower }}">{{ . }}</a>
+                <a class="article-category-link" href="{{ absLangURL "/" }}categories/{{ . | urlize | lower }}">{{ . }}</a>
                 {{ if lt $k (sub $categoriesLen 1) }}, {{ end }}
                 {{ end }}
             {{ end }}
         {{ end }}
 
         {{ if .IsTranslated }}
-
-            <!-- replace "Translations" with "{{ i18n "translations" }}" -->
             &middot; {{ i18n "translations" }}
-
-
             {{ range .Translations }}
                 {{ $curLang := index (where $.Site.Languages "Lang" .Lang) 0 }}
                 <a href="{{ .Permalink }}">{{ $curLang.LanguageName }}</a>

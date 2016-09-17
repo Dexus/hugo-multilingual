@@ -3,6 +3,7 @@ title = "Über mich"
 keywords = []
 featured = false
 thumbnail = ""
+slug = "/über-mich"
 date = "2016-09-09T19:52:52+02:00"
 tags = []
 categories = []
@@ -11,7 +12,6 @@ hide_comments = false
 type = "page"
 [menu.main]
     weight = 10
-url = "/über-mich"
 +++
 
 John Doe ist Software-Entwickler bei Startup Inc.

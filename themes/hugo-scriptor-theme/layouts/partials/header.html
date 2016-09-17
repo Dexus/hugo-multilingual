@@ -1,10 +1,14 @@
 {{ if not .Site.Params.hide_menu }}
 <header class="site-header" role="banner">
-    {{ with .Site.Params.logo }}
-    <h1 class="site-title"><a href="{{ string $.Site.BaseURL | absLangURL }}"><img src="{{ . | absURL }}" /></a></h1>
-    {{ else }}
-    <h1 class="site-title"><a href="{{ string .Site.BaseURL | absLangURL }}">{{ .Site.Title }}</a></h1>
-    {{ end }}
+    <h1 class="site-title">
+        <a href="{{ absLangURL "/" }}">
+            {{ with .Site.Params.logo }}
+                <img src="{{ . | absURL }}" />
+            {{ else }}
+                {{ .Site.Title }}
+            {{ end }}
+        </a>
+    </h1>
 
     {{ partial "navigation" . }}
 </header>

@@ -4,6 +4,7 @@
 - id: main-navigation
   translation: Main navigation
 
+
 #
 #   Nodes (category list etc.)
 #
@@ -48,6 +49,7 @@
 - id: posted-in
   translation: in # Posted by [author] in ...
 
+
 #
 #   Pagination
 #
@@ -82,3 +84,6 @@
 #
 - id: credit
   translation: Powered by <a target="_blank" href="http://www.gohugo.io">Hugo</a>. Scriptor theme by <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>.
+
+- id: back-to-top
+  translation: Back to Top

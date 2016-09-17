@@ -9,7 +9,6 @@ googleAnalytics = ""
 DefaultContentLanguage = "en"
 theme = "hugo-scriptor-theme"
 
-
 #
 #   General settings
 #
@@ -30,7 +29,7 @@ theme = "hugo-scriptor-theme"
 #   Language configuration
 #
 [languages.en]
-    weight = 0
+    weight = 20
     languageName = "English"
     languageCode = "en-us"
     description = "Scriptor is a minimal Hugo blogging theme for writers."
@@ -51,7 +50,6 @@ theme = "hugo-scriptor-theme"
     message = "John Doe ist Designer, Referent und Autor. Er ist der Creative Director bei Awesome Design Studio, Mitbegründer des Magazines Camera und ein Kaffee-Junkie."
     copyright = "Alle Rechte vorbehalten."
     paginatePath = "seite"
-
 
     [[languages.de.menu.main]]
         url    = "/"

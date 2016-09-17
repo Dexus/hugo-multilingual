@@ -4,6 +4,7 @@
 - id: main-navigation
   translation: Hauptmenü
 
+
 #
 #   Nodes (category list etc.)
 #
@@ -69,7 +70,20 @@
 
 
 #
+#   404 page
+#
+- id: page-not-found
+  translation: Oops, die Seite konnte nicht gefunden werden
+
+- id: page-not-found-description
+  translation: Den Inhalt nach dem Sie suchen scheint nicht zu existieren - [zurück zur Startseite]({{ . }})</a>.
+
+
+#
 #   Footer
 #
 - id: credit
-  translation: Erstellt mit <a target="_blank" href="http://www.gohugo.io">Hugo</a>. Scriptor-Theme von <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>.
+  translation: Erstellt mit <a target="_blank" href="http://www.gohugo.io">Hugo</a>. Scriptor-Theme von <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>
+
+- id: back-to-top
+  translation: Nach oben
