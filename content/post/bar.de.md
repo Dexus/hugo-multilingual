@@ -8,4 +8,5 @@ keywords = []
 featured = false
 thumbnail = ""
 hide = false
+authors = ["john"]
 +++

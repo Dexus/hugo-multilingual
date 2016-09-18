@@ -5,6 +5,7 @@ keywords = []
 tags = []
 title = "Bar"
 thumbnail = "/images/shoes.jpg"
+authors = ["alice"]
 +++
 
 John Doe is a Senior Art Director from Vilnius, Lithuania. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.

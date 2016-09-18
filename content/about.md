@@ -9,6 +9,7 @@ categories = []
 hide = false
 hide_comments = false
 type = "page"
+authors = ["alice"]
 [menu.main]
     weight = 10
 +++
